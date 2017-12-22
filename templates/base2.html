@@ -1,0 +1,157 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{% block title %}Base {% endblock %}</title>
+
+<!-- google web font -->
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+
+<!--bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom fonts for this template -->
+<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+ <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+ <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="%static vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+  <link href="{%static 'css/creative.min.css'%}" rel="stylesheet">
+    <link href="{%static 'css/creative.css'%}" rel="stylesheet ">
+
+
+
+    <!-- Navigation -->
+<style>
+    #header_css{
+        background-image:({% static 'img/header.jpg' %}) ;
+        background-color: green ;
+    }
+    .main {
+        margin-top:200px ;
+    }
+</style>
+</head>
+<body>
+<header id="header_css">
+    <!-- menu -->
+    <div>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" >
+      <div class="container">
+
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">필씨의 중고나라</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </div>
+    <!-- end menu -->
+    <div>
+      <div class="container my-auto main">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>필씨의중고나라</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+
+            <p class="text-faded mb-5"><strong>최저가만 모으고, 거르고 한방에!</strong></p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">More</a>
+          </div>
+        </div>
+      </div>
+    </div>  
+</header>
+
+
+
+
+<!--<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color:red;">-->
+      <!--<div class="container">-->
+
+        <!--<a class="navbar-brand js-scroll-trigger" href="#page-top">필씨의 중고나라</a>-->
+        <!--<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
+          <!--<span class="navbar-toggler-icon"></span>-->
+        <!--</button>-->
+        <!--<div class="collapse navbar-collapse" id="navbarResponsive">-->
+          <!--<ul class="navbar-nav ml-auto">-->
+            <!--<li class="nav-item">-->
+              <!--<a class="nav-link js-scroll-trigger" href="#about">About</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+              <!--<a class="nav-link js-scroll-trigger" href="#services">Services</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+              <!--<a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+              <!--<a class="nav-link js-scroll-trigger" href="#contact">Contact</a>-->
+            <!--</li>-->
+          <!--</ul>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</nav>-->
+
+<!--<header class="masthead text-center text-white d-flex">-->
+           <!--<a class="menu" href="#"></a>-->
+      <!--<div class="container my-auto">-->
+        <!--<div class="row">-->
+          <!--<div class="col-lg-10 mx-auto">-->
+            <!--<h1 class="text-uppercase">-->
+              <!--<strong>필씨의중고나라</strong>-->
+            <!--</h1>-->
+            <!--<hr>-->
+          <!--</div>-->
+          <!--<div class="col-lg-8 mx-auto">-->
+
+            <!--<p class="text-faded mb-5"><strong>최저가만 모으고, 거르고 한방에!</strong></p>-->
+            <!--<a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">More</a>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</header>-->
+
+
+{% block content %}
+{% endblock %}
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- bootstrap javascript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" ></script>
+
+
+
+
+</body>
+</html>
